@@ -40,6 +40,10 @@ import { AppState } from './app.service';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         About
       </a>
+      <a [routerLink]=" ['./car'] "
+        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+        Car (PrimeNG)
+      </a>
     </nav>
 
     <main>

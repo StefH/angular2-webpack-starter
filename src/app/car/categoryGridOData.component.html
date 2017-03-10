@@ -1,0 +1,22 @@
+<div class="ContentSideSections Implementation">
+    <p-dataTable [value]="categories" selectionMode="single"
+            filterDelay=500
+            [paginator]="true"
+            [rows]="5"
+            [lazy]="true"
+            [totalRecords]="totalRecords"
+            (onLazyLoad)="loadCategoriesLazy($event)"
+            [responsive]="true">
+        <header>View Categories</header>
+        <p-column field="CategoryID" header="Id" [sortable]="true"></p-column>
+        <p-column field="CategoryName" header="Name (contains)" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+        <p-column field="Picture" header="Picture">
+            <template let-cat="rowData" pTemplate type="body">
+                <img [src]="'data:image/bmp;base64,'+cat.Picture" width="20" height="20"/>
+            </template>
+        </p-column>
+    
+    </p-dataTable>
+
+    <div>{{filter | json}}</div>
+</div>

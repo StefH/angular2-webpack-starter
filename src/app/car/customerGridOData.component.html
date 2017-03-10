@@ -1,0 +1,16 @@
+<div class="ContentSideSections Implementation">
+    <p-dataTable [value]="customers" selectionMode="single"
+            [paginator]="true"
+            [rows]="5"
+            [lazy]="true"
+            [totalRecords]="totalRecords"
+            (onLazyLoad)="loadCategoriesLazy($event)"
+            [responsive]="true">
+        <header>View Customers</header>
+        <p-column field="CustomerID" header="Id (startsWith)" [sortable]="true" [filter]="true" filterMatchMode="startsWith"></p-column>
+        <p-column field="CompanyName" header="Name (contains)" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+        <p-column field="City" header="City (endsWith)" [sortable]="true" [filter]="true" filterMatchMode="endsWith"></p-column>
+    </p-dataTable>
+
+    <div>{{filter | json}}</div>
+</div>

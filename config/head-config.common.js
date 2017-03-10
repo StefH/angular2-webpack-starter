@@ -35,7 +35,15 @@ module.exports = {
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/icon/favicon-16x16.png' },
 
     /** <link> tags for a Web App Manifest **/
-    { rel: 'manifest', href: '/assets/manifest.json' }
+    { rel: "manifest", href: "/assets/manifest.json" },
+
+    /** stylesheet tags for PrimeNG **/
+    { rel: "stylesheet", href: "/assets/primeui/themes/bootstrap/theme.css" },
+    { rel: "stylesheet", href: "/assets/icon/css/font-awesome.min.css" },
+    { rel: "stylesheet", href: "/assets/primeui/primeui-ng-all.min.css" },
+
+    /** our own stylesheet **/
+    { rel: "stylesheet", href: "/assets/css/my-theme.css" }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#00bcd4' },

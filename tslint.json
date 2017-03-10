@@ -36,7 +36,7 @@
     ],
     "max-line-length": [
       true,
-      100
+      999
     ],
     "no-string-literal": false,
     "no-use-before-declare": true,

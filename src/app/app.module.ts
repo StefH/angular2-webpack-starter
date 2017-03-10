@@ -28,6 +28,9 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
+import { TabMenuModule } from 'primeng/primeng';
+import { CarComponent } from './car/car.component';
+import { CarModule } from './car/car.module';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -50,6 +53,7 @@ type StoreType = {
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [
+    CarComponent,
     AppComponent,
     AboutComponent,
     HomeComponent,
@@ -60,7 +64,13 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+
+    // import own modules
+    CarModule,
+
+    // import primeng modules
+    TabMenuModule,
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

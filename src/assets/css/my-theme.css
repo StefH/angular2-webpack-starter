@@ -1,0 +1,13 @@
+.ui-tooltip .ui-tooltip-text {
+   padding: 3px 10px;
+   background-color: rgb(0, 128, 0);
+   color: #ffffff;
+   border-radius: 0;
+}
+
+.ui-tooltip-top .ui-tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    margin-left: -5px;
+    border-top-color: rgb(0, 128, 0);
+}
