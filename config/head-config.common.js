@@ -38,7 +38,7 @@ module.exports = {
     { rel: "manifest", href: "/assets/manifest.json" },
 
     /** stylesheet tags for PrimeNG **/
-    { rel: "stylesheet", href: "/assets/primeui/themes/bootstrap/theme.css" },
+    { rel: "stylesheet", href: "/assets/primeui/themes/omega/theme.css" },
     { rel: "stylesheet", href: "/assets/icon/css/font-awesome.min.css" },
     { rel: "stylesheet", href: "/assets/primeui/primeui-ng-all.min.css" },
 

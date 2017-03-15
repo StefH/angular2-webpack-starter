@@ -10,7 +10,7 @@ import { ICategory } from './category';
 
 console.log('`CategoryGridODataComponent` component loaded asynchronously');
 
-Component({
+@Component({
     templateUrl: './categoryGridOData.component.html',
     selector: 'my-category-grid-odata',
     providers: [ { provide: ODataConfiguration, useFactory: () => {
@@ -19,7 +19,7 @@ Component({
         return odta; }
     }, ODataServiceFactory ],
     styleUrls: [ './carGrid.component.css']
-});
+})
 export class CategoryGridODataComponent implements OnInit {
 
     public categories: ICategory[] = [];

@@ -7,7 +7,7 @@ import { DataResolver } from './app.resolver';
 import { CarComponent } from './car/car.component';
 
 export const ROUTES: Routes = [
-  { path: 'car',      component: HomeComponent },
+  { path: 'car',   component: CarComponent },
   { path: '',      component: HomeComponent },
   { path: 'home',  component: HomeComponent },
   { path: 'about', component: AboutComponent },
