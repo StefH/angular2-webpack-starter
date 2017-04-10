@@ -90,7 +90,7 @@
     "primeng": "2.0.3", 
     "primeui": "4.1.15", 
     "linq-es2015": "2.4.16",
-    "angular2-odata": "0.0.23"
+    "angular-odata-es5": "0.1.2"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.4.6",
