@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LazyLoadEvent, FilterMetadata } from 'primeng/primeng';
 import { ODataOperation } from 'angular2-odata/operation';
-import { ODataConfiguration, ODataServiceFactory, ODataService, ODataQuery } from 'angular2-odata';
+import { ODataConfiguration, ODataServiceFactory, ODataService, ODataQuery } from 'angular-odata-es5';
 import { Observable, Operator } from 'rxjs/rx';
 import { ICategory } from './category';
 
