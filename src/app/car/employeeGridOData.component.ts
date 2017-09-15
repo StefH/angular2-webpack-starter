@@ -1,6 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { LazyLoadEvent, FilterMetadata } from 'primeng/primeng';
-import { ODataOperation, ODataConfiguration, ODataServiceFactory, ODataService, ODataQuery } from 'angular-odata-es5';
+import { ODataConfiguration, ODataServiceFactory, ODataService, ODataQuery } from 'angular-odata-es5';
 import { Observable, Operator } from 'rxjs/rx';
 import { IEmployee } from './employee';
 

@@ -22,7 +22,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 // OData
-// import 'angular-odata-es5';
+import 'angular-odata-es5';
 
 // Primeng
 // import 'primeng/primeng';
