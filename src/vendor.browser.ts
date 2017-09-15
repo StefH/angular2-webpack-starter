@@ -22,10 +22,10 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 // OData
-import 'angular2-odata';
+// import 'angular-odata-es5';
 
 // Primeng
-import 'primeng/primeng';
+// import 'primeng/primeng';
 
 if ('production' === ENV) {
   // Production
